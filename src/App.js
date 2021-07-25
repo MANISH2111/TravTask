@@ -40,7 +40,7 @@ const useStyles = makeStyles({
     appMain: {
         paddingLeft: '240px',
         paddingRight: '100px',
-        width: '97%',
+        width: '100%',
         paddingBottom: '5px',
     },
 });

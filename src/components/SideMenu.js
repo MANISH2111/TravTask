@@ -25,7 +25,7 @@ import {
 } from '@material-ui/pickers';
 import Launches from './Launches';
 
-const drawerWidth = 240;
+const drawerWidth = 250;
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -85,8 +85,11 @@ const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(2),
         marginTop: '40px',
-        minWidth: '90%',
+        minWidth: '80%',
         marginBottom: '100px',
+    },
+    tab: {
+        marginTop: '30px',
     },
 }));
 
@@ -190,9 +193,8 @@ export default function SideMenu() {
                         )}
                     </IconButton>
                 </div>
-                {/* <Divider /> */}
                 <FormControl className={classes.formControl}>
-                    <Typography> Launches</Typography>
+                    <Typography>Filter By Time</Typography>
                     <InputLabel id='demo-simple-select-label'></InputLabel>
                     <Select
                         labelId='demo-simple-select-label'
@@ -207,6 +209,7 @@ export default function SideMenu() {
                 </FormControl>
                 <Divider />
                 <List>
+                    <Typography>Filter By Date</Typography>
                     {[filtersObj.time.startTime, filtersObj.time.endTime].map(
                         (text, index) => (
                             <ListItem button key={index}>

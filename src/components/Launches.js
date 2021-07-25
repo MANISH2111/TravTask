@@ -4,6 +4,7 @@ import LaunchCard from './Launch';
 
 const useStyles = makeStyles((theme) => ({
     pageContent: {
+        paddingTop: '40px',
         width: '100%',
         background: 'none',
         marginTop: theme.spacing(1),
