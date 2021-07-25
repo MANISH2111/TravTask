@@ -9,7 +9,6 @@ import {
 import { Provider } from 'react-redux';
 import store from './store/store';
 import SideMenu from './components/SideMenu';
-import Launches from './components/Launches';
 
 const themes = createTheme({
     palette: {
@@ -56,9 +55,7 @@ function App() {
                     <SideMenu />
                 </div>
 
-                <div className={classes.appMain}>
-                    <Launches />
-                </div>
+                <div className={classes.appMain}></div>
 
                 <CssBaseline />
             </ThemeProvider>
